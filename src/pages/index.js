@@ -100,7 +100,7 @@ const Home = () => {
     <Layout>
       <Typography variant="body1" paragraph>
         Ce formulaire génère un{' '}
-        <Link href="https://fr.wikipedia.org/wiki/Bookmarklet" >bookmarklet</Link>{' '}
+        <Link href="https://fr.wikipedia.org/wiki/Bookmarklet">bookmarklet</Link>{' '}
         qui permet de remplir automatiquement le formulaire{' '}
         <Link href="https://media.interieur.gouv.fr/deplacement-covid-19/">d'Attestation de déplacement dérogatoire.</Link>
       </Typography>
@@ -111,8 +111,8 @@ const Home = () => {
 
       <Typography variant="body1">
         Son code source est entièrement disponible
-        sur <Link href="#">Github</Link> et est automatiquement déployé
-        sur <Link href="#">Netlify</Link>.
+        sur <Link href="https://github.com/mabhub/bookmarklet-attestation-deplacement">Github</Link> et est automatiquement déployé
+        sur <Link href="https://fr.wikipedia.org/wiki/Netlify">Netlify</Link>.
       </Typography>
 
       <Paper className={classes.paper}>
