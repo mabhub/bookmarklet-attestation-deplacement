@@ -98,6 +98,10 @@ const Home = () => {
 
   return (
     <Layout>
+      <Typography variant="h1" paragraph>
+        Bookmarklet
+      </Typography>
+
       <Typography variant="body1" paragraph>
         Ce formulaire génère un{' '}
         <Link href="https://fr.wikipedia.org/wiki/Bookmarklet">bookmarklet</Link>{' '}
