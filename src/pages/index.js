@@ -20,6 +20,8 @@ import {
 import Layout from '../components/Layout';
 import SourceCode from '../components/SourceCode';
 
+import { useFields } from '../hooks/useFields';
+import { useCheckboxes } from '../hooks/useCheckboxes';
 import { getSource, asBookmarklet, formToJSON } from '../helpers';
 
 const useStyles = makeStyles({
@@ -52,30 +54,6 @@ const useStyles = makeStyles({
   },
 });
 
-const textFields = [
-  '#field-firstname',
-  '#field-lastname',
-  '#field-birthday',
-  '#field-placeofbirth',
-  '#field-address',
-  '#field-city',
-  '#field-zipcode',
-  // '#field-datesortie',
-  // '#field-heuresortie',
-];
-
-const checkboxes = [
-  '#checkbox-travail',
-  '#checkbox-achats',
-  '#checkbox-sante',
-  '#checkbox-famille',
-  '#checkbox-handicap',
-  '#checkbox-sport_animaux',
-  '#checkbox-convocation',
-  '#checkbox-missions',
-  '#checkbox-enfants',
-];
-
 const noop = e => e.preventDefault();
 
 const Home = () => {
@@ -98,6 +76,9 @@ const Home = () => {
     // eslint-disable-next-line no-param-reassign
     if (node) { node.href = bookmarklet; }
   }, [bookmarklet]);
+
+  const fieldsSchema = useFields();
+  const checkboxes = useCheckboxes();
 
   return (
     <Layout>
@@ -124,14 +105,15 @@ const Home = () => {
 
       <Paper className={classes.paper}>
         <form onChange={handleFormChange}>
-          {textFields.map(field => (
+          {fieldsSchema.map(({ id, label, ...rest }) => (
             <TextField
               className={classes.field}
               fullWidth
-              id={field}
-              key={field}
-              label={field}
+              id={id}
+              key={id}
+              label={label}
               variant="outlined"
+              {...rest}
             />
           ))}
         </form>
@@ -148,14 +130,14 @@ const Home = () => {
             renderValue={selected => (
               <div className={classes.chips}>
                 {selected.map(value => (
-                  <Chip key={value} label={value} className={classes.chip} />
+                  <Chip key={value} label={value.split('-').pop()} className={classes.chip} />
                 ))}
               </div>
             )}
           >
-            {checkboxes.map(field => (
-              <MenuItem key={field} value={field}>
-                {field}
+            {checkboxes.map(({ id }) => (
+              <MenuItem key={id} value={id}>
+                {id.split('-').pop()}
               </MenuItem>
             ))}
           </Select>

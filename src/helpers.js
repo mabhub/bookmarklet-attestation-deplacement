@@ -10,11 +10,11 @@ const fields = ${JSON.stringify(fields, null, 2)};
 const checkboxes = ${JSON.stringify(checkboxes, null, 2)};
 
 Object.entries(fields).forEach(
-  ([field, value]) => document.querySelector(field).value = value
+  ([field, value]) => document.querySelector('#' + field).value = value
 );
 
 checkboxes.forEach(
-  checkbox => document.querySelector(checkbox).checked = 'checked'
+  checkbox => document.querySelector('#' + checkbox).checked = 'checked'
 );
 
 ${send ? 'document.querySelector(\'#generate-btn\').click();' : ''}
