@@ -166,9 +166,13 @@ const Home = () => {
           )}
         </Box>
 
-        <Typography variant="body2" className={classes.sourceLabel}>
+        <Typography variant="body2" className={classes.sourceLabel} paragraph>
           Il est inutile de cliquer sur ces boutons.
-          Il faut les glisser/déposer dans votre barre de raccourcis.
+          <br />
+          Il faut en <strong>glisser/déposer</strong> un dans la barre de raccourcis du navigateur
+          web pour y insérer ce bookmarklet.
+          <br />
+          Il suffit ensuite de se rendre sur le formulaire d'attestation et de cliquer dessus.
         </Typography>
       </Paper>
 
