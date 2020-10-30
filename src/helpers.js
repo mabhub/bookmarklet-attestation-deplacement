@@ -19,3 +19,13 @@ checkboxes.forEach(
 
 ${send ? 'document.querySelector(\'#generate-btn\').click();' : ''}
 `;
+
+export const formToJSON = form =>
+  Array.from(form.querySelectorAll('input'))
+    .reduce((data, element) => {
+      if (!element.value) { return data; }
+      return {
+        ...data,
+        [element.id]: element.value,
+      };
+    }, {});

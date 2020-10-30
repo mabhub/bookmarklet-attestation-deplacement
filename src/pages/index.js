@@ -18,8 +18,9 @@ import {
 } from '@material-ui/core';
 
 import Layout from '../components/Layout';
-import { getSource, asBookmarklet } from '../helpers';
 import SourceCode from '../components/SourceCode';
+
+import { getSource, asBookmarklet, formToJSON } from '../helpers';
 
 const useStyles = makeStyles({
   paper: {
@@ -50,16 +51,6 @@ const useStyles = makeStyles({
     opacity: 0.25,
   },
 });
-
-const formToJSON = form =>
-  Array.from(form.querySelectorAll('input'))
-    .reduce((data, element) => {
-      if (!element.value) { return data; }
-      return {
-        ...data,
-        [element.id]: element.value,
-      };
-    }, {});
 
 const textFields = [
   '#field-firstname',
