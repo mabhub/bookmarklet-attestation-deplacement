@@ -1,4 +1,4 @@
-# Bookmarklet
+# Générateur de bookmarklet
 
 Ce formulaire génère un [bookmarklet](https://fr.wikipedia.org/wiki/Bookmarklet)
 qui permet de remplir automatiquement le formulaire d'[Attestation de
