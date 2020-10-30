@@ -19,9 +19,11 @@ import {
 
 import Layout from '../components/Layout';
 import SourceCode from '../components/SourceCode';
+import MDBlock from '../components/MDBlock';
 
-import { useFields } from '../hooks/useFields';
-import { useCheckboxes } from '../hooks/useCheckboxes';
+import useFields from '../hooks/useFields';
+import useCheckboxes from '../hooks/useCheckboxes';
+
 import { getSource, asBookmarklet, formToJSON } from '../helpers';
 
 const useStyles = makeStyles({
@@ -82,26 +84,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <Typography variant="h1" paragraph>
-        Bookmarklet
-      </Typography>
-
-      <Typography variant="body1" paragraph>
-        Ce formulaire génère un{' '}
-        <Link href="https://fr.wikipedia.org/wiki/Bookmarklet">bookmarklet</Link>{' '}
-        qui permet de remplir automatiquement le formulaire{' '}
-        <Link href="https://media.interieur.gouv.fr/deplacement-covid-19/">d'Attestation de déplacement dérogatoire.</Link>
-      </Typography>
-
-      <Typography variant="body1">
-        Ce site ne stocke ni ne traite aucune information.
-      </Typography>
-
-      <Typography variant="body1">
-        Son code source est entièrement disponible
-        sur <Link href="https://github.com/mabhub/bookmarklet-attestation-deplacement">Github</Link> et est automatiquement déployé
-        sur <Link href="https://fr.wikipedia.org/wiki/Netlify">Netlify</Link>.
-      </Typography>
+      <MDBlock block="intro" />
 
       <Paper className={classes.paper}>
         <form onChange={handleFormChange}>

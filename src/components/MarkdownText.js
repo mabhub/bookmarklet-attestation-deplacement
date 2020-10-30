@@ -4,6 +4,9 @@ import Rehype2react from 'rehype-react';
 
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
+
+import { Link as GLink } from 'gatsby';
 
 const MarkdownText = ({ hast, components, ...rest }) => {
   const renderAst = new Rehype2react({
@@ -17,6 +20,12 @@ const MarkdownText = ({ hast, components, ...rest }) => {
       h5: props => <Typography variant="h5" paragraph {...props} />,
       h6: props => <Typography variant="h6" paragraph {...props} />,
       p: props => <Typography variant="body1" paragraph {...props} />,
+      a: ({ href, ...props }) => {
+        if (href[0] === '/') {
+          return <Link component={GLink} to={href} {...props} />;
+        }
+        return <Link href={href} {...props} />;
+      },
       ...components,
     },
   }).Compiler;
