@@ -1,11 +1,5 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-
 <h1 align="center">
-  Gatsby's Material-UI & Remark starter
+  Bookmarklet attestation de déplacement
 </h1>
 
 ## Getting Started 🚀
@@ -19,13 +13,12 @@ Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick
 
 ## How To Use 🔧
 
-1. **Create a Gatsby site.**
+1. **Clone the source code.**
 
-   Use the Gatsby CLI to create a new site, specifying this starter:
+   Use Git to get the source code of the site:
 
    ```shell
-   # create a new Gatsby site using material-ui-markdown starter
-   gatsby new my-site https://github.com/makinacorpus/gatsby-starter-material-ui-markdown
+   git clone git@github.com:mabhub/bookmarklet-attestation-deplacement.git
    ```
 
 2. **Start developing.**
@@ -33,17 +26,20 @@ Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick
    Navigate into your new site’s directory and start it up.
 
    ```shell
-   cd my-site/
+   cd bookmarklet-attestation-deplacement
+   npm ci
    npm start
    ```
 
 3. **Open the source code and start editing!**
 
-   Your site is now running at `http://localhost:8000`!
+   The site is now running at `http://localhost:8000`!
 
    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-   Open the `my-site` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+   Open the `bookmarklet-attestation-deplacement` directory in your code editor
+   of choice and edit `src/pages/index.js`. Save your changes and the browser
+   will update in real time!
 
 ## Learning Gatsby 🎓
 
@@ -52,8 +48,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## Deploy 💫
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/makinacorpus/gatsby-starter-material-ui-markdown)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/makinacorpus/gatsby-starter-material-ui-markdown)
