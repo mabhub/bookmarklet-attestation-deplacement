@@ -1,0 +1,50 @@
+{
+  "name": "gatsby-starter-material-ui-markdown",
+  "private": true,
+  "description": "Custom starter with Material UI theme & Remark",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "gatsby": "^2.24.84",
+    "gatsby-plugin-sharp": "^2.6.39",
+    "gatsby-remark-copy-linked-files": "^2.3.19",
+    "gatsby-remark-images": "^3.3.33",
+    "gatsby-source-filesystem": "^2.3.34",
+    "gatsby-theme-material-ui": "^1.0.13",
+    "gatsby-transformer-remark": "^2.8.38",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rehype-react": "^6.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-makina": "^4.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "2.1.2"
+  },
+  "peerDependencies": {
+    "@reach/router": "*",
+    "clsx": "*",
+    "prop-types": "*",
+    "react-helmet": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makinacorpus/gatsby-starter-material-ui-markdown"
+  },
+  "bugs": {
+    "url": "https://github.com/makinacorpus/gatsby-starter-material-ui-markdown/issues"
+  }
+}
