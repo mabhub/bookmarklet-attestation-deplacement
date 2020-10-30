@@ -85,6 +85,8 @@ const checkboxes = [
   '#checkbox-enfants',
 ];
 
+const noop = e => e.preventDefault();
+
 const Home = () => {
   const classes = useStyles();
 
@@ -95,6 +97,16 @@ const Home = () => {
   const handleSelectChange = event => setSelectedCheckboxes(event.target.value);
   const handleFormChange = event => setFields(formToJSON(event.currentTarget));
   const handleSendChange = event => setSend(event.target.checked);
+
+  const bookmarklet = React.useMemo(
+    () => asBookmarklet(getSource(fields, selectedCheckboxes, send)),
+    [fields, selectedCheckboxes, send],
+  );
+
+  const setHref = React.useCallback(node => {
+    // eslint-disable-next-line no-param-reassign
+    if (node) { node.href = bookmarklet; }
+  }, [bookmarklet]);
 
   return (
     <Layout>
@@ -176,18 +188,22 @@ const Home = () => {
       <Paper className={classes.final}>
         <Box className={classes.buttons}>
           <Button
-            href={asBookmarklet(getSource(fields, selectedCheckboxes, send))}
+            href="#"
             variant="contained"
             color="primary"
+            ref={setHref}
+            onClick={noop}
           >
             Remplir mon attestation
           </Button>
 
           {Object.values(fields).shift() && (
             <Button
-              href={asBookmarklet(getSource(fields, selectedCheckboxes, send))}
+              href="#"
               variant="contained"
               color="primary"
+              ref={setHref}
+              onClick={noop}
             >
               {Object.values(fields).shift()}
             </Button>
