@@ -4,8 +4,8 @@ export const asBookmarklet = str => {
   return `javascript:${codeURL}`;
 };
 
-export const getSource = (fields, checkboxes, send = true) => `
-const fields = ${JSON.stringify(fields, null, 2)};
+export const getSource = (fields, checkboxes, send = true) =>
+  `const fields = ${JSON.stringify(fields, null, 2)};
 
 const checkboxes = ${JSON.stringify(checkboxes, null, 2)};
 

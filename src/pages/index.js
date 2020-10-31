@@ -26,30 +26,33 @@ import useCheckboxes from '../hooks/useCheckboxes';
 import { getSource, asBookmarklet, formToJSON } from '../helpers';
 
 const useStyles = makeStyles(theme => ({
-  paper: {
-    padding: '0 1rem',
-    margin: '1rem 0',
+  formWrapper: {
+    padding: theme.spacing(1, 2),
+    margin: theme.spacing(2, 0),
   },
   field: {
-    marginTop: '1rem',
+    marginTop: theme.spacing(2),
   },
   chip: {
     margin: '0 0.25rem',
   },
-  final: {
-    padding: '1rem',
-    margin: '1rem 0',
+  buttonsWrapper: {
+    margin: theme.spacing(2, 0),
+    padding: theme.spacing(2),
   },
   buttons: {
     display: 'flex',
     justifyContent: 'space-around',
-    marginBottom: '1rem',
+    marginBottom: theme.spacing(2),
   },
-  sourceLabel: {
+  buttonsLegend: {
     textAlign: 'center',
   },
-  source: {
+  sourceWrapper: {
     marginTop: theme.spacing(12),
+    padding: theme.spacing(2, 2),
+  },
+  source: {
   },
 }));
 
@@ -81,7 +84,7 @@ const Home = () => {
     <Layout>
       <MDBlock block="intro" />
 
-      <Paper className={classes.paper}>
+      <Paper className={classes.formWrapper} variant="outlined">
         <form onChange={handleFormChange}>
           {fieldsSchema.map(({ id, label, ...rest }) => (
             <TextField
@@ -136,7 +139,7 @@ const Home = () => {
         </FormControl>
       </Paper>
 
-      <Paper className={classes.final}>
+      <Paper className={classes.buttonsWrapper} variant="outlined">
         <Box className={classes.buttons}>
           <CustomButton ref={setHref}>Pré-remplir</CustomButton>
 
@@ -149,7 +152,7 @@ const Home = () => {
           )}
         </Box>
 
-        <Typography variant="body2" className={classes.sourceLabel} paragraph>
+        <Typography variant="body2" className={classes.buttonsLegend} paragraph>
           Il est inutile de cliquer sur ces boutons.
           <br />
           Il faut en <strong>glisser/déposer</strong> un dans la barre de raccourcis du navigateur
@@ -159,13 +162,15 @@ const Home = () => {
         </Typography>
       </Paper>
 
-      <Typography variant="body1" className={classes.source} paragraph>
-        Le code JavaScript ci-après correspond précisément à ce qui sera exécuté lors de
-        l'utilisation du bookmarklet sur la page du formulaire d'attestation
-      </Typography>
+      <Paper className={classes.sourceWrapper} variant="outlined">
+        <Typography variant="body1" className={classes.source} paragraph>
+          Le code JavaScript ci-après correspond précisément à ce qui sera exécuté lors de
+          l'utilisation du bookmarklet sur la page du formulaire d'attestation
+        </Typography>
 
-      <Paper>
-        <SourceCode content={getSource(fields, selectedCheckboxes, send)} />
+        <Paper variant="outlined">
+          <SourceCode content={getSource(fields, selectedCheckboxes, send)} />
+        </Paper>
       </Paper>
     </Layout>
   );
