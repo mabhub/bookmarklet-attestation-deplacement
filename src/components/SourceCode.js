@@ -1,22 +1,12 @@
 import React from 'react';
+import Highlight from 'react-highlight.js';
 
-import { makeStyles } from '@material-ui/core';
+import 'highlight.js/styles/monokai.css';
 
-const useStyles = makeStyles({
-  code: {
-    overflowX: 'scroll',
-    paddingBottom: '0.5rem',
-  },
-});
-
-const SourceCode = ({ content }) => {
-  const classes = useStyles();
-
-  return (
-    <pre className={classes.code}>
-      {content}
-    </pre>
-  );
-};
+const SourceCode = ({ content }) => (
+  <Highlight language="javascript">
+    {content}
+  </Highlight>
+);
 
 export default SourceCode;

@@ -25,7 +25,7 @@ import useCheckboxes from '../hooks/useCheckboxes';
 
 import { getSource, asBookmarklet, formToJSON } from '../helpers';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   paper: {
     padding: '0 1rem',
     margin: '1rem 0',
@@ -49,11 +49,9 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   source: {
-    padding: '1rem',
-    margin: '1rem 0',
-    opacity: 0.25,
+    marginTop: theme.spacing(12),
   },
-});
+}));
 
 const Home = () => {
   const classes = useStyles();
@@ -161,7 +159,12 @@ const Home = () => {
         </Typography>
       </Paper>
 
-      <Paper className={classes.source}>
+      <Typography variant="body1" className={classes.source} paragraph>
+        Le code JavaScript ci-après correspond précisément à ce qui sera exécuté lors de
+        l'utilisation du bookmarklet sur la page du formulaire d'attestation
+      </Typography>
+
+      <Paper>
         <SourceCode content={getSource(fields, selectedCheckboxes, send)} />
       </Paper>
     </Layout>
