@@ -2,6 +2,8 @@
   Bookmarklet attestation de déplacement
 </h1>
 
+*You may find more explanation on full process on [this dedicated page](src/md-pages/explications.md) (in French)*
+
 ## Getting Started 🚀
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
