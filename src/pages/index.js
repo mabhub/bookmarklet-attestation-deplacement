@@ -1,14 +1,12 @@
 import React from 'react';
 import {
   Box,
-  Button,
   Checkbox,
   Chip,
   FormControl,
   FormControlLabel,
   Input,
   InputLabel,
-  Link,
   makeStyles,
   MenuItem,
   Paper,
@@ -17,9 +15,10 @@ import {
   Typography,
 } from '@material-ui/core';
 
+import CustomButton from '../components/CustomButton';
 import Layout from '../components/Layout';
-import SourceCode from '../components/SourceCode';
 import MDBlock from '../components/MDBlock';
+import SourceCode from '../components/SourceCode';
 
 import useFields from '../hooks/useFields';
 import useCheckboxes from '../hooks/useCheckboxes';
@@ -55,8 +54,6 @@ const useStyles = makeStyles({
     opacity: 0.25,
   },
 });
-
-const noop = e => e.preventDefault();
 
 const Home = () => {
   const classes = useStyles();
@@ -143,26 +140,14 @@ const Home = () => {
 
       <Paper className={classes.final}>
         <Box className={classes.buttons}>
-          <Button
-            href="#"
-            variant="contained"
-            color="primary"
-            ref={setHref}
-            onClick={noop}
-          >
-            Remplir mon attestation
-          </Button>
+          <CustomButton ref={setHref}>Pré-remplir</CustomButton>
+
+          <CustomButton ref={setHref}>Remplir mon attestation</CustomButton>
 
           {Object.values(fields).shift() && (
-            <Button
-              href="#"
-              variant="contained"
-              color="primary"
-              ref={setHref}
-              onClick={noop}
-            >
+            <CustomButton ref={setHref}>
               {Object.values(fields).shift()}
-            </Button>
+            </CustomButton>
           )}
         </Box>
 
