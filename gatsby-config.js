@@ -26,6 +26,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'bookmarklet',
+        path: `${__dirname}/src/bookmarklet.js`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'markdown-blocks',
         path: `${__dirname}/src/md-blocks`,
       },

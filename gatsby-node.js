@@ -1,6 +1,7 @@
 const path = require('path');
 const fetch = require('node-fetch');
 const { JSDOM } = require('jsdom');
+const bookmarklet = require('bookmarklet');
 
 exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => {
   const result = await graphql(`
@@ -65,4 +66,16 @@ exports.sourceNodes = async ({ actions: { createNode }, createNodeId, createCont
       contentDigest: createContentDigest(JSON.stringify(field)),
     },
   }));
+};
+
+exports.onCreateNode = async ({ node, loadNodeContent, actions: { createNodeField } }) => {
+  if (node.sourceInstanceName === 'bookmarklet') {
+    const source = await loadNodeContent(node);
+
+    const a = bookmarklet.parseFile(source);
+    const miniSource = bookmarklet.convert(a.code, a.options);
+
+    // createNodeField({ node, name: 'source', value: source });
+    createNodeField({ node, name: 'miniSource', value: miniSource });
+  }
 };
