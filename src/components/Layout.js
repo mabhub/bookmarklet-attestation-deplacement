@@ -7,6 +7,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Container } from '@material-ui/core';
 import Link from './Link';
 
+import favicon from '../favicon.svg';
+
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -58,6 +60,9 @@ const Layout = ({ className, title = '', ...rest }) => {
         htmlAttributes={{ lang: 'fr' }}
         title={title}
         titleTemplate="%s | Aide au remplissage de formulaire"
+        link={[
+          { rel: 'shortcut icon', type: 'image/svg', href: `${favicon}` },
+        ]}
       />
 
       <Container>
