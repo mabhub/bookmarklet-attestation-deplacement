@@ -26,7 +26,7 @@ const Layout = ({ className, title = '', ...rest }) => {
       <Helmet
         htmlAttributes={{ lang: 'fr' }}
         title={title}
-        titleTemplate="%s | Bookmarklet"
+        titleTemplate="%s | Aide au remplissage de formulaire"
       />
       <Container
         component="main"

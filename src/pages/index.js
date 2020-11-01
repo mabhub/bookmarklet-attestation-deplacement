@@ -81,7 +81,7 @@ const Home = () => {
   const checkboxes = useCheckboxes();
 
   return (
-    <Layout>
+    <Layout title="Formulaire › Bookmarklet">
       <MDBlock block="intro" />
 
       <Paper className={classes.formWrapper} variant="outlined">

@@ -41,7 +41,7 @@ const Simple = () => {
   }, [miniSource]);
 
   return (
-    <Layout>
+    <Layout title="Bookmarklet › Bookmarklet">
       <MDBlock block="simple" />
 
       <Box className={classes.box}>

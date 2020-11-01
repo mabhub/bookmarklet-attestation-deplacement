@@ -1,3 +1,7 @@
+---
+title: Outils alternatifs
+---
+
 # Outils alternatifs
 
 Tout un tas de bons développeurs ont, depuis la première version du générateur

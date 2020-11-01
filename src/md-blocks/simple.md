@@ -1,9 +1,9 @@
-## Encore plus simple
+# Encore plus simple
 
 Voici un autre moyen de mémoriser la saisie du formulaire d'attestation :  
 *Un bookmarklet qui génère un autre bookmarklet.*
 
-### Mode d'emploi
+## Mode d'emploi
 
 - **Glisser le lien** "Enregistrer la saisie" vers la barre de raccourcis du
   navigateur web.
