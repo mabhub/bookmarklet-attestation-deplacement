@@ -1,3 +1,5 @@
+export const noop = e => e.preventDefault();
+
 export const asBookmarklet = str => {
   const code = str;
   const codeURL = encodeURIComponent(`(() => {${code}})()`);
