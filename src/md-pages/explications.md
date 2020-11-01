@@ -32,7 +32,7 @@
 - Le script en question ne peut-être fonctionnel que sur le formulaire de
   d'attestation.
 
-## Bookmakarlet
+## Bookmarklet
 
 - Un bookmarklet c'est quoi ?
 
