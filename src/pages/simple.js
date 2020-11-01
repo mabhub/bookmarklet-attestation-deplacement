@@ -35,16 +35,22 @@ const Simple = () => {
 
   `);
 
+  const setHref = React.useCallback(node => {
+    // eslint-disable-next-line no-param-reassign
+    if (node) { node.href = miniSource; }
+  }, [miniSource]);
+
   return (
     <Layout>
       <MDBlock block="simple" />
 
       <Box className={classes.box}>
         <Button
-          href={miniSource}
+          href="#"
           variant="outlined"
           color="secondary"
           onClick={noop}
+          ref={setHref}
         >
           Enregistrer la saisie
         </Button>
