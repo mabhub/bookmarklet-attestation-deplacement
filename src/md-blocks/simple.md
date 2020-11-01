@@ -5,12 +5,13 @@ Voici un autre moyen de mémoriser la saisie du formulaire d'attestation :
 
 ## Mode d'emploi
 
-- **Glisser le lien** "Enregistrer la saisie" vers la barre de raccourcis du
+- **Glisser le lien** *"Enregistrer la saisie"* vers la barre de raccourcis du
   navigateur web.
 - Se rendre sur le formulaire d'[attestation de déplacement
   dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/).
-- **Cliquer** sur le raccourci précédemment créé.
-- **Remplir** le formulaire
-- Sous le bouton de validation, vous trouverez un nouveau bouton à faire glisser
-  vers la barre de raccourcis.  
-  Ce nouveau lien permet de **réutiliser la saisie** qui vient d'être faite.
+- **Cliquer** sur le raccourci *"Enregistrer la saisie"* de la barre de
+  raccourcis.
+- **Remplir** le formulaire  
+- Sous le bouton de validation, vous trouverez **un nouveau bouton** à faire
+  glisser vers la barre de raccourcis.  
+  Ce nouveau lien permet de **ré-insérer la saisie** qui vient d'être faite.

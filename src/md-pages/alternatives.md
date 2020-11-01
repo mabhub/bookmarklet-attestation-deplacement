@@ -4,7 +4,7 @@ title: Outils alternatifs
 
 # Outils alternatifs
 
-Tout un tas de bons développeurs ont, depuis la première version du générateur
+Un bon nombre de développeurs ont, depuis la première version du générateur
 d'attestations au mois de mars, proposé d'autres outils que [celui-ci](/simple)
 pour faciliter et/ou automatiser son remplissage. Chaque outil a ses propres
 avantages et inconvénients.
