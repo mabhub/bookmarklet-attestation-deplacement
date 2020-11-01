@@ -20,17 +20,17 @@ Généralement, ces outils permettent de générer une attestation complète.
 correspond bien à celle actuellement en vigueur, pour éviter tout risque de
 verbalisation.
 
-### [Confinement : générez automatiquement votre attestation de déplacement dérogatoire](https://www.luko.eu/fr/page/covid19attestation)
+### [luko.eu/fr/page/covid19attestation](https://www.luko.eu/fr/page/covid19attestation)
 
 - par [luko.eu](https://twitter.com/getluko) *via [@X3Ndotfr](https://twitter.com/X3Ndotfr/status/1322859107209138177)*
 - [les sources](https://github.com/GetLuko/Covid19-French-Auth) sur Github
 
-### [Fork du formulaire officiel](https://attestation-deplacement-covid19.vercel.app/)
+### [attestation-deplacement-covid19.vercel.app](https://attestation-deplacement-covid19.vercel.app/)
 
 - par [@naholyr](https://twitter.com/naholyr/status/1322184059766902792)
 - [les sources](https://github.com/naholyr/attestation-deplacement-derogatoire-q4-2020) sur Github
 
-### [Attestation en un clic](https://attestation.page/)
+### [attestation.page](https://attestation.page/)
 
 - par [@_benjamintd](https://twitter.com/_benjamintd) *via [@mOoot](https://twitter.com/mOoot/status/1322505305540988931)*
 - [les sources](https://github.com/benjamintd/attestation.page) sur Github
