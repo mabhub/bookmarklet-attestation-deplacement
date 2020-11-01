@@ -16,6 +16,8 @@
     "@material-ui/core": "^4.11.0",
     "bookmarklet": "github:mabhub/bookmarklet",
     "gatsby": "^2.24.84",
+    "gatsby-plugin-netlify": "^2.3.25",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-sharp": "^2.6.39",
     "gatsby-remark-copy-linked-files": "^2.3.19",
     "gatsby-remark-images": "^3.3.33",

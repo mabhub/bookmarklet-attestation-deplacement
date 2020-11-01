@@ -7,6 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-netlify-cache',
     {
       resolve: 'gatsby-theme-material-ui',
       options: {
