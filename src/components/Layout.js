@@ -4,8 +4,8 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Container, Link as MLink } from '@material-ui/core';
-import { Link } from 'gatsby';
+import { Box, Container } from '@material-ui/core';
+import Link from './Link';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -64,11 +64,7 @@ const Layout = ({ className, title = '', ...rest }) => {
         <Box className={classes.nav}>
           {menu.map(props => (
             <Box key={props.to} className={classes.navItem}>
-              <MLink
-                activeClassName={classes.currentNavItem}
-                component={Link}
-                {...props}
-              />
+              <Link activeClassName={classes.currentNavItem} {...props} />
             </Box>
           ))}
         </Box>
