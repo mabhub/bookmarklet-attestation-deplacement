@@ -6,11 +6,8 @@
    *
    * @param element Form field
    */
-  const adjustValue = element => (
-    element.type === 'checkbox'
-      ? element.checked === true
-      : element.value
-  );
+  const adjustValue = ({ type, checked, value }) =>
+    (type === 'checkbox' ? checked === true : value);
 
   /**
    * Return an object containing element id and value,
@@ -27,10 +24,10 @@
   /**
    * Return all filled field from given form
    *
-   * @param form Form element
+   * @param wrapper Form element
    */
-  const formToJSON = form =>
-    Array.from(form.querySelectorAll('input'))
+  const formToJSON = wrapper =>
+    Array.from(wrapper.querySelectorAll('input'))
       .reduce((data, element) => (
         element.value
           ? { ...data, ...elementValue(element) }
@@ -40,9 +37,8 @@
   /**
    * Prepend given string with bookmarklet script requirements
    */
-  const asBookmarklet = str => {
-    const code = str;
-    const codeURL = encodeURIComponent(`(() => {${code}})()`);
+  const asBookmarklet = string => {
+    const codeURL = encodeURIComponent(`(() => {${string}})()`);
     return `javascript:${codeURL}`;
   };
 
