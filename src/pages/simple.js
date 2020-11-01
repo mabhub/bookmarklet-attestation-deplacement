@@ -16,6 +16,17 @@ const useStyles = makeStyles(theme => ({
   breath: {
     marginTop: theme.spacing(4),
   },
+  explanations: {
+    '& .footnotes': {
+      color: theme.palette.grey[500],
+      '& > hr': {
+        display: 'none',
+      },
+      '& ol > li > p': {
+        display: 'inline',
+      },
+    },
+  },
 }));
 
 const Simple = () => {
@@ -56,7 +67,9 @@ const Simple = () => {
         </Button>
       </Box>
 
-      <Typography variant="h3">
+      <MDBlock block="explications" className={classes.explanations} />
+
+      <Typography variant="h2">
         Explications techniques
       </Typography>
 

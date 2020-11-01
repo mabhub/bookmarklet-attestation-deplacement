@@ -14,7 +14,7 @@ const MDBlock = ({ block, ...props }) => {
   }
 
   return (
-    <MarkdownText hast={selectedBlock.htmlAst} />
+    <MarkdownText hast={selectedBlock.htmlAst} {...props} />
   );
 };
 
