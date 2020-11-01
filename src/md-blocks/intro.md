@@ -1,10 +1,3 @@
-<div style="border: 3px solid #eee; padding: 1rem 1rem 0; margin-bottom: 1rem;">
-
-[Une version encore plus simple](/simple) est maintenant disponible
-[ici](/simple).
-
-</div>
-
 # Générateur de bookmarklet
 
 Ce formulaire produit un

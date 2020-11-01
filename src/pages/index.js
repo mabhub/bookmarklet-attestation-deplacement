@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 import {
   Box,
   Checkbox,
@@ -17,6 +18,7 @@ import {
 
 import CustomButton from '../components/CustomButton';
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import MDBlock from '../components/MDBlock';
 import SourceCode from '../components/SourceCode';
 
@@ -26,6 +28,11 @@ import useCheckboxes from '../hooks/useCheckboxes';
 import { getSource, asBookmarklet, formToJSON } from '../helpers';
 
 const useStyles = makeStyles(theme => ({
+  redirect: {
+    padding: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+    borderColor: theme.palette.secondary.main,
+  },
   formWrapper: {
     padding: theme.spacing(1, 2),
     margin: theme.spacing(2, 0),
@@ -82,6 +89,18 @@ const Home = () => {
 
   return (
     <Layout title="Formulaire › Bookmarklet">
+      <Paper
+        button
+        variant="outlined"
+        className={classes.redirect}
+        onClick={() => navigate('/simple')}
+      >
+        <Typography variant="body1">
+          Une version encore <strong><Link color="secondary" to="/simple">plus simple</Link></strong> est
+          maintenant <Link color="secondary" to="/simple">disponible ici</Link>.
+        </Typography>
+      </Paper>
+
       <MDBlock block="intro" />
 
       <Paper className={classes.formWrapper} variant="outlined">
