@@ -13,32 +13,29 @@ Voici un liste non exhaustive de ceux que j'ai pu voir passer :
 *Si vous avez d'autres outils à suggérer, n'hésitez pas [à faire signe][@mab_],
 ou à [contribuer directement][contribuer].*
 
-## Les formulaires
+## Les formulaires complets
+
+Généralement, ces outils permettent de générer une attestation complète.  
+**Attention** ⚠️ il est nécessaire de s'assurer que l'attestation générée
+correspond bien à celle actuellement en vigueur, pour éviter tout risque de
+verbalisation.
 
 ### [Confinement : générez automatiquement votre attestation de déplacement dérogatoire](https://www.luko.eu/fr/page/covid19attestation)
 
-- par [luko.eu](https://twitter.com/getluko) *via
-  [@X3Ndotfr](https://twitter.com/X3Ndotfr)*
-
+- par [luko.eu](https://twitter.com/getluko) *via [@X3Ndotfr](https://twitter.com/X3Ndotfr/status/1322859107209138177)*
+- [les sources](https://github.com/GetLuko/Covid19-French-Auth) sur Github
 
 ### [Fork du formulaire officiel](https://attestation-deplacement-covid19.vercel.app/)
 
 - par [@naholyr](https://twitter.com/naholyr/status/1322184059766902792)
+- [les sources](https://github.com/naholyr/attestation-deplacement-derogatoire-q4-2020) sur Github
 
 ### [Attestation en un clic](https://attestation.page/)
 
-- par [@_benjamintd](https://twitter.com/_benjamintd) *via
-  [@mOoot](https://twitter.com/mOoot)*
+- par [@_benjamintd](https://twitter.com/_benjamintd) *via [@mOoot](https://twitter.com/mOoot/status/1322505305540988931)*
+- [les sources](https://github.com/benjamintd/attestation.page) sur Github
 
-## Les extensions navigateurs
-
-…
-
-## Les applications mobiles
-
-…
-
-## Générateurs de QRCodes
+## Les générateurs de QRCodes
 
 ### [Code QR d’attestation de sortie](https://gist.github.com/clochix/93e0647486f9cd6dc6ee6232f841e1da)
 
@@ -48,3 +45,11 @@ ou à [contribuer directement][contribuer].*
 
 [contribuer]:
 https://github.com/mabhub/bookmarklet-attestation-deplacement/blob/main/src/md-pages/alternatives.md
+
+## Les extensions navigateurs
+
+…
+
+## Les applications mobiles
+
+…
