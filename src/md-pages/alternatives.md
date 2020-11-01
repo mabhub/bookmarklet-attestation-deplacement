@@ -38,6 +38,12 @@ ou à [contribuer directement][contribuer].*
 
 …
 
+## Générateurs de QRCodes
+
+### [Code QR d’attestation de sortie](https://gist.github.com/clochix/93e0647486f9cd6dc6ee6232f841e1da)
+
+- par [@clochix](https://twitter.com/clochix)
+
 [@mab_]: https://twitter.com/mab_
 
 [contribuer]:
