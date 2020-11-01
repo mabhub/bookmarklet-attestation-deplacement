@@ -8,6 +8,7 @@ import { Container } from '@material-ui/core';
 
 import favicon from '../favicon.svg';
 import Header from './Header';
+import Footer from './Footer';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,6 +26,7 @@ const Layout = ({
   className,
   title = '',
   noHeader,
+  noFooter,
   ...rest
 }) => {
   const classes = useStyles();
@@ -47,6 +49,8 @@ const Layout = ({
         className={clsx(classes.main, className)}
         {...rest}
       />
+
+      {!noFooter && <Footer />}
     </div>
   );
 };
