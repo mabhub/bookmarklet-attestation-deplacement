@@ -4,10 +4,10 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Container } from '@material-ui/core';
-import Link from './Link';
+import { Container } from '@material-ui/core';
 
 import favicon from '../favicon.svg';
+import Header from './Header';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -15,43 +15,18 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     minHeight: '100vh',
   },
-  nav: {
-    display: 'flex',
-    justifyContent: 'center',
-    padding: theme.spacing(2, 0),
-  },
-  navItem: {
-    margin: theme.spacing(0, 2),
-  },
-  currentNavItem: {
-    color: theme.palette.secondary.main,
-  },
   main: {
-    marginTop: '2rem',
-    marginBottom: '2rem',
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(4),
   },
 }));
 
-const menu = [
-  {
-    children: 'Formulaire › Bookmarklet',
-    to: '/',
-  },
-  {
-    children: 'Bookmarklet › Bookmarklet',
-    to: '/simple',
-  },
-  {
-    children: 'Alternatives',
-    to: '/alternatives',
-  },
-  {
-    children: 'Github',
-    to: 'https://github.com/mabhub/bookmarklet-attestation-deplacement',
-  },
-];
-
-const Layout = ({ className, title = '', ...rest }) => {
+const Layout = ({
+  className,
+  title = '',
+  noHeader,
+  ...rest
+}) => {
   const classes = useStyles();
 
   return (
@@ -65,15 +40,7 @@ const Layout = ({ className, title = '', ...rest }) => {
         ]}
       />
 
-      <Container>
-        <Box className={classes.nav}>
-          {menu.map(props => (
-            <Box key={props.to} className={classes.navItem}>
-              <Link activeClassName={classes.currentNavItem} {...props} />
-            </Box>
-          ))}
-        </Box>
-      </Container>
+      {!noHeader && <Header />}
 
       <Container
         component="main"
