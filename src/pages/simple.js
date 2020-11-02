@@ -82,7 +82,7 @@ const Simple = () => {
       </Typography>
 
       <Paper variant="outlined">
-        <SourceCode content={source} />
+        <SourceCode content={source} style={{ margin: 0, maxHeight: 300, overflow: 'auto' }} />
       </Paper>
 
       <Typography variant="body1" paragraph className={classes.breath}>
