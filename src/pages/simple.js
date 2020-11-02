@@ -101,14 +101,6 @@ const Simple = () => {
         <SourceCode content={source} className={classes.sourceCode} />
       </Paper>
 
-      <Typography variant="body1" paragraph className={classes.breath}>
-        Ce qui, une fois transformé en bookmarklet donne :
-      </Typography>
-
-      <Paper variant="outlined">
-        <SourceCode content={miniSource} className={classes.sourceCode} />
-      </Paper>
-
       <Typography variant="h3" paragraph className={classes.breath}>
         Bookmarklet (généré) de saisie
       </Typography>
