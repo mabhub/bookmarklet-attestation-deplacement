@@ -8,6 +8,17 @@ import MDBlock from '../components/MDBlock';
 import { noop } from '../helpers';
 import SourceCode from '../components/SourceCode';
 
+const generatedSource = `const fields = { "field-firstname": "John", "field-lastname": "Doe" };
+const checkboxes = ["checkbox-achats"];
+
+Object.entries(fields).forEach(
+  ([field, value]) => document.querySelector('#' + field).value = value
+);
+
+checkboxes.forEach(
+  checkbox => document.querySelector('#' + checkbox).checked = 'checked'
+);`;
+
 const useStyles = makeStyles(theme => ({
   box: {
     textAlign: 'center',
@@ -29,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   },
   sourceCode: {
     margin: 0,
-    maxHeight: 300,
+    maxHeight: 320,
     overflow: 'auto',
   },
 }));
@@ -82,8 +93,8 @@ const Simple = () => {
         …qui n'intéressera probablement que les développeurs.
       </Typography>
 
-      <Typography variant="body1" paragraph>
-        Voici la source du bookmarklet :
+      <Typography variant="h3" paragraph>
+        Bookmarklet d'enregistrement
       </Typography>
 
       <Paper variant="outlined">
@@ -96,6 +107,14 @@ const Simple = () => {
 
       <Paper variant="outlined">
         <SourceCode content={miniSource} className={classes.sourceCode} />
+      </Paper>
+
+      <Typography variant="h3" paragraph className={classes.breath}>
+        Bookmarklet (généré) de saisie
+      </Typography>
+
+      <Paper variant="outlined">
+        <SourceCode content={generatedSource} className={classes.sourceCode} />
       </Paper>
     </Layout>
   );
