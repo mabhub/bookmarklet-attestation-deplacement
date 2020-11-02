@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Box, Button, makeStyles, Paper, Typography } from '@material-ui/core';
 import Layout from '../components/Layout';
 import MDBlock from '../components/MDBlock';
+import Link from '../components/Link';
 
 import { noop } from '../helpers';
 import SourceCode from '../components/SourceCode';
@@ -18,6 +19,8 @@ Object.entries(fields).forEach(
 checkboxes.forEach(
   checkbox => document.querySelector('#' + checkbox).checked = 'checked'
 );`;
+
+const bookmarkletSourceUrl = 'https://github.com/mabhub/bookmarklet-attestation-deplacement/blob/main/src/bookmarklet.js';
 
 const useStyles = makeStyles(theme => ({
   box: {
@@ -42,6 +45,10 @@ const useStyles = makeStyles(theme => ({
     margin: 0,
     maxHeight: 320,
     overflow: 'auto',
+  },
+  sourceLink: {
+    textAlign: 'right',
+    fontStyle: 'italic',
   },
 }));
 
@@ -100,6 +107,13 @@ const Simple = () => {
       <Paper variant="outlined">
         <SourceCode content={source} className={classes.sourceCode} />
       </Paper>
+
+      <Box className={classes.sourceLink}>
+        <Typography variant="body2">
+          Le <Link to={bookmarkletSourceUrl}>code source du bookmarklet principal</Link> est
+          accessible <Link to={bookmarkletSourceUrl}>directement sur Github.</Link>
+        </Typography>
+      </Box>
 
       <Typography variant="h3" paragraph className={classes.breath}>
         Bookmarklet (généré) de saisie
