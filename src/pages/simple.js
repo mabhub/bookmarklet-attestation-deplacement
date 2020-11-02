@@ -27,6 +27,11 @@ const useStyles = makeStyles(theme => ({
       },
     },
   },
+  sourceCode: {
+    margin: 0,
+    maxHeight: 300,
+    overflow: 'auto',
+  },
 }));
 
 const Simple = () => {
@@ -82,7 +87,7 @@ const Simple = () => {
       </Typography>
 
       <Paper variant="outlined">
-        <SourceCode content={source} style={{ margin: 0, maxHeight: 300, overflow: 'auto' }} />
+        <SourceCode content={source} className={classes.sourceCode} />
       </Paper>
 
       <Typography variant="body1" paragraph className={classes.breath}>
@@ -90,7 +95,7 @@ const Simple = () => {
       </Typography>
 
       <Paper variant="outlined">
-        <SourceCode content={miniSource} />
+        <SourceCode content={miniSource} className={classes.sourceCode} />
       </Paper>
     </Layout>
   );
