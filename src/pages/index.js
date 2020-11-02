@@ -96,7 +96,7 @@ const Home = () => {
         onClick={() => navigate('/simple')}
       >
         <Typography variant="body1">
-          Une version encore <strong><Link color="secondary" to="/simple">plus simple</Link></strong> est
+          Une version <strong><Link color="secondary" to="/simple">plus simple</Link></strong> est
           maintenant <Link color="secondary" to="/simple">disponible ici</Link>.
         </Typography>
       </Paper>
