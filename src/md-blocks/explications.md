@@ -9,12 +9,12 @@ Edge, Opéra,…).
 
 Dans tous les cas, son rôle et son fonctionnement sont les mêmes : lorsqu'un
 raccourci est enregistré, il permet d'accéder en un clic à une adresse (URL)
-déterminée. En général ils peuvent être organisés en différents dossiers et
-sous-dossiers. Généralement l'un de ces dossiers peut être affiché sour forme
+déterminée. Généralement ils sont organisés en différents dossiers et
+sous-dossiers. L'un de ces dossiers peut normalement être affiché sour forme
 d'une *barre d'outils* dont chaque bouton est un raccourci.
 
 Dans le cas d'un **bookmarklet**, l'adresse (URL) est remplacée par du
-[JavaScript][JavaScript]. Un clic sur le raccourci va exécution ce script.
+[JavaScript][JavaScript]. Un clic sur le raccourci exécute ce script.
 
 ### Comment ajouter un bookmarklet au navigateur
 

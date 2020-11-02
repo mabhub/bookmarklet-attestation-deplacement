@@ -91,7 +91,7 @@ const Simple = () => {
       </Paper>
 
       <Typography variant="body1" paragraph className={classes.breath}>
-        Ce qui, une fois transformé en bookmarklet done :
+        Ce qui, une fois transformé en bookmarklet donne :
       </Typography>
 
       <Paper variant="outlined">
