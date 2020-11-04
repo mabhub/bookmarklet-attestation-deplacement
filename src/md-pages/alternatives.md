@@ -10,7 +10,7 @@ de développeurs ont proposé des outils alternatifs. Que ce soit pour ajouter d
 fonctionnalités, faciliter, rendre plus accessible ou automatiser le
 remplissage, chaque outil a ses propres avantages et inconvénients.
 
-Voici un liste non exhaustive de ceux que j'ai pu voir passer :  
+Voici une liste non exhaustive de ceux que j'ai pu voir passer :  
 *Si vous avez d'autres outils à suggérer, n'hésitez pas [à le signaler][@mab_],
 ou à [contribuer directement][contribuer].*
 
