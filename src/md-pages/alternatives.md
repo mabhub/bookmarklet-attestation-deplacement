@@ -35,6 +35,11 @@ verbalisation.
 - par [@_benjamintd](https://twitter.com/_benjamintd) *via [@mOoot](https://twitter.com/mOoot/status/1322505305540988931)*
 - [les sources](https://github.com/benjamintd/attestation.page) sur Github
 
+### [static.attestation-facile.site](https://static.attestation-facile.site/)
+
+- par [Eric Regnier](https://github.com/eregnier)
+- [les sources](https://github.com/eregnier/attestation-facile.site) sur Github
+
 ## Les générateurs de QRCodes
 
 ### [Code QR d’attestation de sortie](https://gist.github.com/clochix/93e0647486f9cd6dc6ee6232f841e1da)
