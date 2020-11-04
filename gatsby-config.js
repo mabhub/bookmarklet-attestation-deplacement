@@ -50,6 +50,13 @@ module.exports = {
             },
           },
           'gatsby-remark-copy-linked-files',
+          {
+            resolve: 'gatsby-remark-autolink-headers',
+            options: {
+              removeAccents: true,
+              maintainCase: false,
+            },
+          },
         ],
       },
     },

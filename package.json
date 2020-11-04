@@ -19,6 +19,7 @@
     "gatsby-plugin-netlify": "^2.3.25",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-sharp": "^2.6.39",
+    "gatsby-remark-autolink-headers": "^2.4.0",
     "gatsby-remark-copy-linked-files": "^2.3.19",
     "gatsby-remark-images": "^3.3.33",
     "gatsby-source-filesystem": "^2.3.34",
