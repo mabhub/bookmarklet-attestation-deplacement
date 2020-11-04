@@ -1,25 +1,32 @@
 import React from 'react';
-
+import { Link as GLink } from 'gatsby';
 import Rehype2react from 'rehype-react';
 
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import { Divider, Box, Typography, Link } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
-import { Link as GLink } from 'gatsby';
+const useStyles = makeStyles(theme => ({
+  hr: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+  },
+}));
 
 const MarkdownText = ({ hast, components, ...rest }) => {
+  const classes = useStyles();
+
   const renderAst = new Rehype2react({
     createElement: React.createElement,
     Fragment: React.Fragment,
     components: {
-      h1: props => <Typography variant="h1" paragraph {...props} />,
-      h2: props => <Typography variant="h2" paragraph {...props} />,
-      h3: props => <Typography variant="h3" paragraph {...props} />,
-      h4: props => <Typography variant="h4" paragraph {...props} />,
-      h5: props => <Typography variant="h5" paragraph {...props} />,
-      h6: props => <Typography variant="h6" paragraph {...props} />,
-      p: props => <Typography variant="body1" paragraph {...props} />,
+      h1: props => <Typography variant="h1" gutterBottom {...props} />,
+      h2: props => <Typography variant="h2" gutterBottom {...props} />,
+      h3: props => <Typography variant="h3" gutterBottom {...props} />,
+      h4: props => <Typography variant="h4" gutterBottom {...props} />,
+      h5: props => <Typography variant="h5" gutterBottom {...props} />,
+      h6: props => <Typography variant="h6" gutterBottom {...props} />,
+      p: props => <Typography variant="body1" gutterBottom {...props} />,
+      hr: props => <Divider className={classes.hr} {...props} />,
       a: ({ href, ...props }) => {
         if (href[0] === '/') {
           return <Link component={GLink} to={href} {...props} />;
