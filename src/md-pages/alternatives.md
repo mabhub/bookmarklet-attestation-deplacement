@@ -1,24 +1,39 @@
 ---
-title: Outils alternatifs
+title: Faciliter la génération d'attestations
 ---
 
-# Outils alternatifs
+# Faciliter la génération d'[attestations de déplacement][formulaire officiel].
 
-Un bon nombre de développeurs ont, depuis la première version du générateur
-d'attestations au mois de mars, proposé d'autres outils que [celui-ci](/simple)
-pour faciliter et/ou automatiser son remplissage. Chaque outil a ses propres
-avantages et inconvénients.
+Depuis la première version du formulaire permettant de générer les [attestations
+de déplacement dérogatoire][formulaire officiel] au mois de mars, un bon nombre
+de développeurs ont proposé des outils alternatifs. Que ce soit pour ajouter des
+fonctionnalités, faciliter, rendre plus accessible ou automatiser le
+remplissage, chaque outil a ses propres avantages et inconvénients.
 
 Voici un liste non exhaustive de ceux que j'ai pu voir passer :  
-*Si vous avez d'autres outils à suggérer, n'hésitez pas [à faire signe][@mab_],
+*Si vous avez d'autres outils à suggérer, n'hésitez pas [à le signaler][@mab_],
 ou à [contribuer directement][contribuer].*
+
+----
+
+## Les bookmarklet
+
+> *Ils viennent enrichir le formulaire original, en lui ajoutant des
+> fonctionnalité.*
+
+### [bookmarklet-attestation](/simple)
+
+- par [@mab_][@mab_]
+- [les sources](https://github.com/mabhub/bookmarklet-attestation-deplacement/) sur Github
+
+----
 
 ## Les formulaires complets
 
-Généralement, ces outils permettent de générer une attestation complète.  
-**Attention** ⚠️ il est nécessaire de s'assurer que l'attestation générée
-correspond bien à celle actuellement en vigueur, pour éviter tout risque de
-verbalisation.
+> *Généralement, ces outils tiers permettent de générer une attestation
+> complète.*  
+> *Assurez-vous que l'attestation générée correspond à celle en vigueur
+> actuellement, pour éviter tout risque de verbalisation.*
 
 ### [luko.eu/fr/page/covid19attestation](https://www.luko.eu/fr/page/covid19attestation)
 
@@ -40,26 +55,35 @@ verbalisation.
 - par [Eric Regnier](https://github.com/eregnier)
 - [les sources](https://github.com/eregnier/attestation-facile.site) sur Github
 
+----
+
 ## Les générateurs de QRCodes
 
 ### [Code QR d’attestation de sortie](https://gist.github.com/clochix/93e0647486f9cd6dc6ee6232f841e1da)
 
 - par [@clochix](https://twitter.com/clochix)
 
-[@mab_]: https://twitter.com/mab_
-
-[contribuer]:
-https://github.com/mabhub/bookmarklet-attestation-deplacement/blob/main/src/md-pages/alternatives.md
-
-## Les extensions navigateurs
-
-…
+----
 
 ## Les applications mobiles
+
+> *Pratique et rapide sur mobile.*
 
 ### [AdrienPoupa/AttestationDeplacement](https://github.com/AdrienPoupa/AttestationDeplacement)
 
 - par [Adrien Poupa](https://github.com/AdrienPoupa)
 - [les sources](https://github.com/AdrienPoupa/AttestationDeplacement) sur Github
 
+----
+
+## Les extensions navigateurs
+
 …
+
+
+
+[@mab_]: https://twitter.com/mab_
+
+[contribuer]: https://github.com/mabhub/bookmarklet-attestation-deplacement/blob/main/src/md-pages/alternatives.md
+
+[formulaire officiel]: https://media.interieur.gouv.fr/deplacement-covid-19
