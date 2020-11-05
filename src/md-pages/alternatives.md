@@ -74,6 +74,11 @@ ou à [contribuer directement][contribuer].*
 - par [Adrien Poupa](https://github.com/AdrienPoupa)
 - [les sources](https://github.com/AdrienPoupa/AttestationDeplacement) sur Github
 
+### [TousAntiCovid](https://bonjour.tousanticovid.gouv.fr/)
+
+- par le Gouvernement français ([l'INRIA et un consortium d'acteurs privés](https://fr.wikipedia.org/wiki/StopCovid))
+- [les sources](https://gitlab.inria.fr/stopcovid19) sur le Gitlab de l'INRIA
+
 ----
 
 ## Les extensions navigateurs
