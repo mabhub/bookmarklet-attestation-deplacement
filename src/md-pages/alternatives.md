@@ -19,7 +19,7 @@ ou à [contribuer directement][contribuer].*
 ## Les bookmarklet
 
 > *Ils viennent enrichir le formulaire original, en lui ajoutant des
-> fonctionnalité.*
+> fonctionnalités.*
 
 ### [bookmarklet-attestation](/simple)
 
@@ -76,8 +76,10 @@ ou à [contribuer directement][contribuer].*
 
 ### [TousAntiCovid](https://bonjour.tousanticovid.gouv.fr/)
 
-- par le Gouvernement français ([l'INRIA et un consortium d'acteurs privés](https://fr.wikipedia.org/wiki/StopCovid))
+- par le Gouvernement français ([l'INRIA et un consortium d'acteurs privés](https://fr.wikipedia.org/wiki/StopCovid#Organismes_impliqu%C3%A9s))
 - [les sources](https://gitlab.inria.fr/stopcovid19) sur le Gitlab de l'INRIA
+- *Application officielle de [traçage des contacts][contact tracing] du Gouvernement français,*  
+  *proposant également la génération d'attestations avec la possibilité de mémoriser les saisies.*
 
 ----
 
@@ -85,10 +87,10 @@ ou à [contribuer directement][contribuer].*
 
 …
 
-
-
 [@mab_]: https://twitter.com/mab_
 
 [contribuer]: https://github.com/mabhub/bookmarklet-attestation-deplacement/blob/main/src/md-pages/alternatives.md
 
 [formulaire officiel]: https://media.interieur.gouv.fr/deplacement-covid-19
+
+[contact tracing]: https://fr.wikipedia.org/wiki/Recherche_des_contacts
